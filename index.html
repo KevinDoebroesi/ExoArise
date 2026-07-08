@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+
+<style>
+html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    background:transparent;
+    overflow:hidden;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.logo{
+
+    font-family:'Orbitron',sans-serif;
+    font-size:110px;
+    font-weight:900;
+    color:#32b5ff;
+
+    -webkit-text-stroke:4px #000;
+    text-shadow:
+    0 0 8px #32b5ff,
+    0 0 16px #32b5ff,
+    0 0 28px #32b5ff,
+    0 0 50px #008cff,
+    0 0 80px #008cff;
+
+    animation:
+        float 3s ease-in-out infinite,
+        glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+
+0%{
+text-shadow:
+0 0 6px #32b5ff,
+0 0 15px #32b5ff,
+0 0 30px #32b5ff,
+0 0 50px #008cff;
+}
+
+100%{
+text-shadow:
+0 0 18px #7fd6ff,
+0 0 35px #55c7ff,
+0 0 60px #1da1ff,
+0 0 90px #008cff,
+0 0 120px #008cff;
+}
+
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px) scale(1);
+}
+
+50%{
+transform:translateY(-10px) scale(1.02);
+}
+
+100%{
+transform:translateY(0px) scale(1);
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="logo">ExoArise</div>
+
+</body>
+</html>
